@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/cmdSelectFile"
+            android:layout_width="198dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="146dp"
+            android:enabled="false"
+            android:text="Select Audio File..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_FileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="231dp"
+            android:enabled="false"
+            android:text="SELECT AN AUDIO FILE TO IDENTIFY ITS RAGAM!"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/tb_aro_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="336dp"
+            android:text="S"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+            android:id="@+id/arohanam"
+            android:layout_width="398dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tbgChildSpacing="auto">
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_R1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_G1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_G2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_M1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_M2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_D1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_D2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_N1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Aro_N2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N2" />
+
+        </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/tb_aro_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="336dp"
+            android:text="Ṡ"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+            android:id="@+id/avarohanam"
+            android:layout_width="398dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="544dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tbgChildSpacing="auto">
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_R1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_G1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_G2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_M1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_M2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_D1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_D2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D2" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_N1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N1" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/togg_Avaro_N2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N2" />
+
+        </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/tb_avaro_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="508dp"
+            android:text="S"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/cmdIDRagam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="648dp"
+            android:enabled="true"
+            android:text="Identify Ragam!"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/tb_avaro_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="508dp"
+            android:text="Ṡ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_Arohanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="292dp"
+            android:text="Arohanam:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_Avarohanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="456dp"
+            android:text="Avarohanam:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
